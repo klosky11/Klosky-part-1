@@ -1,0 +1,258 @@
+/* Mobile View */
+
+html {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+/* Logo */
+
+.logo {
+     display:flex;
+    justify-self: left;
+    margin: 0px;
+    height: 40px;
+    width: 50px;
+    box-sizing: border-box
+}
+
+
+/* navigation menu styles */
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-end;
+    margin: 0px;
+    
+}
+
+.navigation ul {
+    list-style:none;
+}
+
+.navigation li {
+    display:inline-block;
+    padding: 0px 8px;
+    margin-top: -23px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:#7944e6;
+    font-size: 12px;
+    font-family: 'bungee';
+}
+
+.navigation a:hover {
+    text-decoration: none;
+    color: #10fdff;
+}
+
+/* About section */
+/* Vertical layout below the header for mobile layout */
+.container {
+    background: #ff00ff;
+    background-size: contain;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width:auto;
+    height:auto;
+    padding: 50px 30px 10px 30px;
+    margin-top: 10px;
+}
+
+.containerImage {
+   padding-left: 50px;
+   width: 170px;
+   object-fit: contain;
+}
+
+.containerText {
+    font-family: 'bungee';
+    font-size: 12px;
+}
+
+
+/* Menu Boxes*/
+.menuBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+.box {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid #7944e6;
+    box-shadow: 0px 4px 8px 0px;
+    width: 80vw;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom:  25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+
+}
+
+
+.menuBoxImage {
+    height: auto;
+    width: 75%;
+    box-sizing: border-box;
+    margin: 25px 25px;
+    object-fit: contain;
+}
+
+.boxImage {
+    box-sizing:border-box;
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
+    max-width: 250px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.boxHead {
+    font-family: 'Bungee';
+}
+
+
+.menuButton a {
+    text-decoration: none;
+    font-family: 'Bungee';
+    color: #7944e6;
+    padding: 10px 10px 50px 10px 
+}
+
+.box:hover {
+    box-shadow: 0px 8px 16px 0px;
+}
+
+.menuButton a:hover {
+    text-decoration: none;
+    color: #10fdff;
+}
+
+
+
+/* Media Query, changing styles at specified width using min-width property */
+/* Desktop design horizontal for 'About' section */
+@media screen and (min-width: 768px) {
+
+/* Desktop View */
+    .logo {
+        position:absolute;
+        top:0;
+        left:auto;
+        height: auto;
+        width: auto;
+        min-width: 30px;
+        min-height: 20px;
+    }
+
+/* About section */
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        box-sizing:border-box;
+        width:fit-content;
+        height:350px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        padding: 0px 0px 20px 20px;
+    } 
+
+    .containerImage {
+        width:300px;
+        object-fit: contain;
+    }
+
+    .containerText {
+        font-family: 'bungee';
+        font-size: 12px;
+        max-width: 600px;
+        margin: 100px;
+        padding: 50px;
+    }
+     
+/* Navigation bar */
+    .navigation {
+        width:auto;
+    }
+
+    .navigation a {
+        font-size: 14px;
+        font-family: 'bungee';
+    }
+
+
+    .navigation li {
+        display:inline-block;
+        padding: 20px 30px;
+        margin-top: 10px;
+    }
+
+
+/* Menu boxes */
+    .menuBox {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menuBoxImage {
+        justify-self: center;
+        box-sizing: border-box;
+        max-width: 250px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .box {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 300px;
+        height: 400px;
+        flex: 0 1 calc (25% - 1 em);
+        margin: 10px 20px;
+    }
+
+    .boxImage {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        max-width: 250px;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    .boxHead {
+        display: flex;
+        align-self: center;
+        margin: 0;
+
+    }
+
+    .menuButton {
+        padding-bottom: 0;
+    }
+
+
+}
